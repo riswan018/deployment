@@ -12,8 +12,8 @@ module "ec2" {
     source = "../../modules/ec2"
   ami_id        = "ami-0e38835daf6b8a2b9"
   instance_type = "t2.micro"
-  subnet_id    =  module.vpc.subnet_id  //its is implicit dependency so once vpc created then only ec2 will be creted
-  instances_count  =  1
+  subnet_id    = module.vpc.subnet_id  //its is implicit dependency so once vpc created then only ec2 will be creted
+  instance_count  =  1 
   env        = "dev"
 
 

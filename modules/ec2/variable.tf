@@ -13,7 +13,7 @@ variable "subnet_id"{
     description = "subnet_id id of my ec2 "
 }
 
-variable "instances_count"{
+variable "instance_count"{
     type        = number   ///chenged
     description = "no.of count"
 }
