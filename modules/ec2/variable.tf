@@ -14,7 +14,7 @@ variable "subnet_id"{
 }
 
 variable "instances_count"{
-    type        = string
+    type        = number   ///chenged
     description = "no.of count"
 }
 
